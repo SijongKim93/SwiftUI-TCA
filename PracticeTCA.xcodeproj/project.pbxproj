@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2934E82CB6393700DF1630 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4D2934E72CB6393700DF1630 /* ComposableArchitecture */; };
+		4D2934EA2CB6395700DF1630 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2934E92CB6395700DF1630 /* CounterFeature.swift */; };
 		4D6883622C96C7C70070347A /* PracticeTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6883612C96C7C70070347A /* PracticeTCAApp.swift */; };
 		4D6883642C96C7C70070347A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6883632C96C7C70070347A /* ContentView.swift */; };
 		4D6883662C96C7C90070347A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6883652C96C7C90070347A /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D2934E92CB6395700DF1630 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		4D68835E2C96C7C70070347A /* PracticeTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6883612C96C7C70070347A /* PracticeTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTCAApp.swift; sourceTree = "<group>"; };
 		4D6883632C96C7C70070347A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2934E82CB6393700DF1630 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				4D6883612C96C7C70070347A /* PracticeTCAApp.swift */,
 				4D6883632C96C7C70070347A /* ContentView.swift */,
+				4D2934E92CB6395700DF1630 /* CounterFeature.swift */,
 				4D6883652C96C7C90070347A /* Assets.xcassets */,
 				4D6883672C96C7C90070347A /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = PracticeTCA;
+			packageProductDependencies = (
+				4D2934E72CB6393700DF1630 /* ComposableArchitecture */,
+			);
 			productName = PracticeTCA;
 			productReference = 4D68835E2C96C7C70070347A /* PracticeTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 4D6883552C96C7C70070347A;
+			packageReferences = (
+				4D2934E62CB6393700DF1630 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 4D68835F2C96C7C70070347A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				4D6883642C96C7C70070347A /* ContentView.swift in Sources */,
 				4D6883622C96C7C70070347A /* PracticeTCAApp.swift in Sources */,
+				4D2934EA2CB6395700DF1630 /* CounterFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D2934E62CB6393700DF1630 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D2934E72CB6393700DF1630 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D2934E62CB6393700DF1630 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D6883562C96C7C70070347A /* Project object */;
 }
